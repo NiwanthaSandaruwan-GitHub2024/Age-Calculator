@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(circle at 16% 40%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 8%, transparent 8%, transparent 92%), radial-gradient(circle at 18% 64%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 8%, transparent 8%, transparent 92%), radial-gradient(circle at 36% 79%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 6%, transparent 6%, transparent 94%), radial-gradient(circle at 90% 53%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 6%, transparent 6%, transparent 94%), radial-gradient(circle at 48% 77%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 6%, transparent 6%, transparent 94%), radial-gradient(circle at 37% 75%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 6%, transparent 6%, transparent 94%), radial-gradient(circle at 39% 87%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 4%, transparent 4%, transparent 96%), radial-gradient(circle at 79% 27%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 4%, transparent 4%, transparent 96%), radial-gradient(circle at 29% 8%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 4%, transparent 4%, transparent 96%), radial-gradient(circle at 14% 83%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 4%, transparent 4%, transparent 96%), linear-gradient(90deg, rgb(156, 156, 156), rgb(235, 235, 235));
+}
+
+.container {
+    position: fixed;
+    display: block;
+    width: 32%;
+    height: 84vh;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.651);
+    background-image: url('./border.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    border: solid black 2px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container * {
+    border: none;
+    outline: none;
+}
+
+.img {
+    width: 60%;
+    height: 35vh;
+    background-image: url('./Agecalimg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-color: red; */
+    margin-left: 25%;
+    margin-top: 4vh;
+}
+
+.input-wrapper {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 0%;
+    background-color: #ffffff;
+    padding: 1.87em 1.5em;
+    border-radius: 0.5em;
+    box-shadow: 0 0.93em 1.25em rgba(0, 0, 0, 0.3);
+    margin-bottom: 3.12em;
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1em;
+}
+
+input,
+button {
+    font-weight: 500;
+    border-radius: 0.31em;
+}
+
+input {
+    background-color: #eeeeff;
+    color: #080808;
+    padding: 1.2em 1.25em;
+    font-size: 0.87em;
+}
+
+button {
+    color: #ffffff;
+    background-color: #227cf1;
+}
+
+button:hover {
+    background-color: rgb(14, 201, 76);
+    color: #080808;
+    cursor: pointer;
+}
+
+.output-wrapper {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.output-wrapper div {
+    height: 6.25em;
+    width: 6.25em;
+    background-color: #ffffff;
+    border-radius: 0.31em;
+    color: #080808;
+    display: grid;
+    place-items: center;
+    padding: 1.25em 0;
+    box-shadow: 0 0.93em 1.25em rgba(0, 0, 0, 0.3);
+}
+
+span {
+    font-size: 1.87em;
+    font-weight: 500;
+}
+
+p {
+    font-size: 0.87em;
+    color: #707070;
+    font-weight: 400;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        height: 80vh;
+    }
+
+    .input-wrapper {
+        width: 80%;
+        height: 8%;
+    }
+
+    input {
+        margin-top: -16%;
+    }
+
+    button {
+        width: 90px;
+        height: 40px;
+        margin-top: -18%;
+    }
+
+    .output-wrapper div {
+        margin-top: -10%;
+        height: 6.25em;
+        width: 6.25em;
+    }
+
+    p {
+        font-size: 0.67em;
+        color: #707070;
+        font-weight: 400;
+    }
+
+}
